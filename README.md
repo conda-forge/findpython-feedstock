@@ -1,11 +1,11 @@
-About findpython
-================
+About findpython-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/findpython-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/findpython/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/findpython-feedstock/blob/main/LICENSE.txt)
 
 Summary: A utility to find python versions on your system
 
