@@ -1,5 +1,5 @@
 {% set name = "findpython" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/findpython-{{ version }}.tar.gz
-  sha256: 036a7841b88e2f372433a589b1f09219519737d2989eb5f5370d70afbcf84765
+  sha256: 56e52b409a92bcbd495cf981c85acf137f3b3e51cc769b46eba219bb1ab7533c
 
 build:
   noarch: python
