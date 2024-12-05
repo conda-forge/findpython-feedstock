@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/findpython-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/findpython-{{ version }}.tar.gz
   sha256: e0c75ba9f35a7f9bb4423eb31bd17358cccf15761b6837317719177aeff46723
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - findpython = "findpython.__main__:main"
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - pdm-backend
   run:
     - packaging >=20
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/findpython/
