@@ -24,7 +24,7 @@ requirements:
   run:
     - packaging >=20
     - python >={{ python_min }}
-    # - platformdirs >=4.3.6
+    - platformdirs >=4.3.6
 
 test:
   imports:
@@ -37,6 +37,7 @@ test:
 
 about:
   home: https://pypi.org/project/findpython/
+  dev_url: https://github.com/frostming/findpython
   summary: A utility to find python versions on your system
   license: MIT
   license_file: LICENSE
