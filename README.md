@@ -9,6 +9,8 @@ Package license: MIT
 
 Summary: A utility to find python versions on your system
 
+Development: https://github.com/frostming/findpython
+
 Current build status
 ====================
 
