@@ -18,7 +18,7 @@ build:
   script: ${{ PYTHON }} -m pip install . -vv
   python:
     entry_points:
-      - findpython = "findpython.__main__:main"
+      - findpython = findpython.__main__:main
 
 requirements:
   host:
