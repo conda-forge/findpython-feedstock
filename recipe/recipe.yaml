@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: findpython
-  version: "0.8.0"
+  version: "0.9.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/findpython-${{ version }}.tar.gz
-  sha256: 53b32264874dfa5990bd09d717819386d8db3149d89fe20f88fe1078de286bae
+  sha256: 497c6b5eb13734be2542dfb6a93267946339601cbc2f1138c8cd4d40311fefe5
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
